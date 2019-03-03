@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">HotelService</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--textEdit-->
+    <string name="title">กรอกข้อมูลงานเทศกาล</string>
+    <string name="geofence_transition_invalid_type">Geofence transition error: invalid transition type %1$d</string>
+
+    <!-- Transition type strings -->
+    <string name="geofence_transition_entered"></string>
+    <string name="geofence_transition_exited">Exited</string>
+    <string name="unknown_geofence_transition">Unknown Transition</string>
+
+
+    <!--login_facebook-->
+    <string name="facebook_app_id">1731643106947096</string>
+    <string name="fb_login_protocol_scheme">fb1731643106947096</string>
+
+</resources>

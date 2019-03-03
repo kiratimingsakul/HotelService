@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fes"
+    tools:context="com.example.administrator.hotelservice.calendar.Calendar_Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Toolbar
+            android:id="@+id/toolbar_calendar"
+            android:background="#111226"
+            android:textAlignment="center"
+            android:title="Calendar"
+            android:titleTextColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            tools:targetApi="lollipop">
+        </Toolbar>
+
+        <com.github.sundeepk.compactcalendarview.CompactCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/compactcalendar_view"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/toolbar_calendar"
+            android:layout_height="250dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:compactCalendarBackgroundColor="#111226"
+            app:compactCalendarCurrentDayBackgroundColor="#914e9cdc"
+            app:compactCalendarCurrentSelectedDayBackgroundColor="#679fca"
+            app:compactCalendarMultiEventIndicatorColor="#fff"
+            app:compactCalendarTargetHeight="250dp"
+            app:compactCalendarTextColor="#fff"
+            app:compactCalendarTextSize="12sp" />
+            <ListView
+                android:id="@+id/bookings_listview"
+                android:layout_width="match_parent"
+                android:background="#c5ffffff"
+                android:layout_below="@+id/compactcalendar_view"
+                android:layout_height="match_parent">
+            </ListView>
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

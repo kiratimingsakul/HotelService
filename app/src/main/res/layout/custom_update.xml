@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_below="@+id/text_Update"
+    tools:showIn="@layout/activity_update_data">
+
+
+
+    <EditText
+        android:id="@+id/addTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_image2"
+        android:hint="ชื่องาน" />
+    <EditText
+        android:id="@+id/addAddress2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addTitle2"
+        android:hint="ที่อยู่"/>
+    <Spinner
+        android:id="@+id/spin_data2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/data_spin"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/addAddress2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:id="@+id/add_description2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="รายละเอียด"
+        android:layout_below="@+id/spin_data2"
+        />
+
+
+    <TextView
+        android:id="@+id/show_lat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/add_description2"
+        android:textStyle="bold"
+        android:text="Latitude :"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/show_lon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lon2"
+        android:layout_alignBottom="@+id/lon2"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:text="Longitude :"
+        android:textColor="#000" />
+
+    <ImageView
+        android:id="@+id/chack_in2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/lon2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/add_description2"
+        android:src="@drawable/check_in" />
+
+
+    <TextView
+        android:id="@+id/lat2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_description2"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/show_lat2"
+        android:layout_toRightOf="@+id/show_lat2" />
+
+    <TextView
+        android:id="@+id/lon2"
+        android:layout_width="200dp"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lat2"
+        android:layout_alignLeft="@+id/lat2"
+        android:layout_alignRight="@+id/lat2"
+        android:layout_alignStart="@+id/lat2"
+        android:layout_below="@+id/lat2" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/wed2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lon2"
+        android:hint="เว็บไซต์ * ถ้ามี *" />
+    <EditText
+        android:id="@+id/tel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wed2"
+        android:hint="เบอร์ติดต่อ" />
+    <Spinner
+        android:id="@+id/spin_status2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/status"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/tel2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/date22"
+        android:layout_below="@+id/spin_status2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="sadasdasdasdasdasdasdasd"
+        android:textColor="#15ffffff"
+        android:layout_toEndOf="@+id/show_lat2"
+        android:layout_toRightOf="@+id/show_lat2"/>
+    <TextView
+        android:id="@+id/date_view2"
+        android:layout_below="@+id/date22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="#000"
+        android:layout_toEndOf="@+id/show_lat2"
+        android:layout_toRightOf="@+id/show_lat2"/>
+
+    <ImageView
+        android:id="@+id/date_pick2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spin_status2"
+        android:src="@drawable/ic_date_range_black_24dp" />
+
+    <EditText
+        android:id="@+id/ex2"
+        android:layout_below="@id/date_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="หมายเหตุ*ถ้ามี*"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>

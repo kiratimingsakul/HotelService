@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="7dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginTop="7dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="12dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    android:id="@+id/draMap">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Toolbar
+            android:id="@+id/toolbar_map"
+            android:background="#111226"
+            android:textAlignment="center"
+            android:title="Calendar"
+            android:titleTextColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            tools:targetApi="lollipop">
+        </Toolbar>
+
+        <EditText
+            android:id="@+id/TF_location"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="18dp"
+            android:hint="ค้นหา"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/B_search"
+            android:layout_width="58dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="ค้นหา" />
+
+        <ImageView
+            android:id="@+id/B_bus_station"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/TF_location"
+            android:layout_below="@+id/TF_location"
+            android:onClick="onClick"
+            android:src="@drawable/ic_bus_black_24dp" />
+
+        <ImageView
+            android:id="@+id/B_train_station"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/TF_location"
+            android:layout_marginStart="83dp"
+            android:onClick="onClick"
+            android:src="@drawable/ic_train_black_24dp" />
+
+        <ImageView
+            android:id="@+id/B_airport"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/TF_location"
+            android:layout_marginStart="145dp"
+            android:onClick="onClick"
+            android:src="@drawable/ic_air_black_24dp" />
+
+        <ImageView
+            android:id="@+id/B_lodging"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/TF_location"
+            android:layout_below="@+id/TF_location"
+            android:onClick="onClick"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_hotel_black_24dp" />
+
+
+        <!--<Button-->
+            <!--android:id="@+id/B_to"-->
+            <!--android:layout_width="58dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignStart="@+id/B_search"-->
+            <!--android:layout_below="@+id/TF_location"-->
+            <!--android:onClick="onClick"-->
+            <!--android:text="To" />-->
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="437dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            tools:context=".ServiceHotel.MapsActivity" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

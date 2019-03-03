@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+  >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:cardElevation="12dp"
+        app:cardCornerRadius="15dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <com.example.administrator.hotelservice.setting_image.Customimage
+                android:id="@+id/imagelist"
+                android:layout_width="85dp"
+                android:layout_height="65dp"
+                android:scaleType="fitXY"
+                android:layout_marginStart="15dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true" />
+
+
+
+            <TextView
+                android:id="@+id/textviewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imagelist"
+                android:layout_marginStart="19dp"
+                android:layout_toEndOf="@+id/imagelist"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:layout_marginLeft="19dp"
+                android:layout_toRightOf="@+id/imagelist" />
+
+            <TextView
+                android:id="@+id/textviewFullForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textviewName"
+                android:layout_below="@+id/textviewName"
+                android:text="TextView"
+                android:textSize="13dp"
+                android:layout_alignLeft="@+id/textviewName" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

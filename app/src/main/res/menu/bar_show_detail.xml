@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/ic_near_me_black_24dp"
+        app:showAsAction="always">
+
+    </item>
+
+    <item
+        android:id="@+id/link"
+        android:icon="@drawable/ic_link_black_24dp"
+        app:showAsAction="always">
+
+    </item>
+
+    <item
+        android:id="@+id/call"
+        android:icon="@drawable/ic_call_black_24dp"
+        app:showAsAction="always">
+
+    </item>
+</menu>

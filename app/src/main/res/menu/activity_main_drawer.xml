@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_button_for_interface"
+            android:title="Home">
+
+
+        </item>
+        <item
+            android:id="@+id/calendar"
+            android:icon="@drawable/ic_event_black_24dp"
+            android:title="Calendar">
+
+        </item>
+
+        <item
+            android:id="@+id/listMyData"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="ListMyData">
+
+        </item>
+
+
+
+        <item
+            android:id="@+id/input_evens"
+            android:icon="@drawable/ic_mode_edit_black_24dp"
+            android:title="CreateEvent">
+
+        </item>
+
+
+        <item
+            android:id="@+id/searching"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Search">
+
+        </item>
+
+        <item
+            android:id="@+id/service"
+            android:icon="@drawable/ic_service_black_24dp"
+            android:title="Service">
+
+        </item>
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_cancel_black_24dp"
+            android:title="Logout">
+
+        </item>
+
+    </group>
+
+
+</menu>

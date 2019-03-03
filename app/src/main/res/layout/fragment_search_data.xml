@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fes"
+    tools:context="com.example.administrator.hotelservice.search_data.Search_Data">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d0ffffff">
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/bar"
+            android:background="@color/colorPrimary"
+            tools:targetApi="lollipop">
+
+        <com.example.administrator.hotelservice.search_data.EditTextWithDel
+            android:id="@+id/edittext1"
+            style="@style/Base.TextAppearance.AppCompat.Subhead.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape"
+            android:hint="Search"
+            android:paddingLeft="16dp"
+            android:singleLine="true"
+            android:textSize="14dp" />
+        </Toolbar>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/bar"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
