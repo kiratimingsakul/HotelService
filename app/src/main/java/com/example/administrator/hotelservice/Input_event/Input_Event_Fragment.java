@@ -215,7 +215,7 @@ public class Input_Event_Fragment extends Fragment implements GoogleApiClient.On
             public void onClick(View view) {
                 onEditText();
 
-                if (!ConvertImage.isEmpty()){
+
                     if (!title.isEmpty() && !Address.isEmpty() && !description.isEmpty() && !province.isEmpty() && !latitude.isEmpty() && !longitude.isEmpty()
                             && !contact.isEmpty() && !sledate.isEmpty()) {
                         AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
@@ -231,9 +231,7 @@ public class Input_Event_Fragment extends Fragment implements GoogleApiClient.On
                     }else {
                         Toast.makeText(getActivity(),"กรุณากรอกข้อมูลให้ครบถ้วน",Toast.LENGTH_LONG).show();
                     }
-                }else {
-                    Toast.makeText(getActivity(),"กรุณาใส่รูปภาพ",Toast.LENGTH_LONG).show();
-                }
+
 
 
 
